@@ -1,0 +1,23 @@
+header {
+	background-color: lightyellow;
+}
+
+ #logo img{
+	padding: 10px;
+	margin-top:10px; 
+	margin-left:30px;
+	background-color: white;
+	}
+
+.news-channels{
+	height:500px;
+	border:2px solid lightyellow;
+	border-radius: 10px 10px 10px 10px;
+	overflow:scroll;
+	margin-left: 20px;
+	} 
+	.news-pages{
+	height:500px;
+	overflow:scroll;
+	} 
+

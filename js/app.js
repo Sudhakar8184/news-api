@@ -1,4 +1,5 @@
 
+
 var buttons=document.getElementsByClassName("button")
 var buttonsCount = buttons.length;
 for (var i = 0; i <= buttonsCount; i += 1) {
@@ -117,6 +118,7 @@ for (var i = 0; i <= buttonsCount; i += 1) {
     //         }
     //     })
     //    }
+
 
 
 

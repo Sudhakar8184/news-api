@@ -16,12 +16,26 @@ header {
 	overflow:scroll;
 	margin-left: 20px;
 	} 
-	.news-pages{
+.new-pages{
 	height:500px;
+	border:2px solid lightyellow;
+	border-radius: 10px 10px 10px 10px;
 	overflow:scroll;
-	} 
-	br {
-   display: block;
-   margin: 50px 0;
+	
+} 
+#head-news{
+	border: 2px solid black;
+	padding: 10px;
+}
+#head-img{
+ float:left;
+ width: 15%;
+}
+#head-title-des{
+	width:75%;
+	float: right;
+}
+#clear{
+	clear:both;
 }
 

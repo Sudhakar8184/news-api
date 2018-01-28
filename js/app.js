@@ -73,7 +73,7 @@
                 let block= document.createElement('div');
                 block.setAttribute('id','head-news');
                 block.innerHTML=markup;
-                const head =document.getElementById('first');
+                let head =document.getElementById('first');
                 head.appendChild(block);  
             }
             

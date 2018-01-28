@@ -1,11 +1,12 @@
 
-
 var buttons=document.getElementsByClassName("button")
 var buttonsCount = buttons.length;
+
 for (var i = 0; i <= buttonsCount; i += 1) {
     buttons[i].onclick = function(e) {
-    //    // alert(this.id)
-    //    gettext(this.id);
+    // alert(this.id)
+    var first = document.getElementById('first');
+    first.innerHTML="";
    (function(news){
         fetch(`https://newsapi.org/v2/top-headlines?sources=${news}&apiKey=3449fa02267b40518f1422b315334332`)
         .then((res)=>{
@@ -27,7 +28,7 @@ for (var i = 0; i <= buttonsCount; i += 1) {
 
                 var description = document.createElement('p');
                 description.setAttribute('id','head-description');
-                
+
                 var anchor = document.createElement('a');
                 anchor.setAttribute('id','head-anchor');
                 anchor.setAttribute('href',data.articles[i].url);
@@ -49,11 +50,11 @@ for (var i = 0; i <= buttonsCount; i += 1) {
                 block.appendChild(block1);
                 block.appendChild(block3);
                 head.appendChild(block);
-                
+
             }
 
         })
-       
+
     })(this.id);
     };
 }
@@ -92,7 +93,7 @@ for (var i = 0; i <= buttonsCount; i += 1) {
     //             let description = document.createElement('p');
     //             description.setAttribute('id','head-description');
 
-                
+
     //             let anchor = document.createElement('a');
     //             anchor.setAttribute('id','head-anchor');
     //             anchor.setAttribute('href',data.articles[j].url);
@@ -114,7 +115,7 @@ for (var i = 0; i <= buttonsCount; i += 1) {
     //             block.appendChild(block1);
     //             block.appendChild(block3);
     //             head.appendChild(block);
-    //         } 
+    //         }
     //         }
     //     })
     //    }

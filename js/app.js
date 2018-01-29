@@ -31,10 +31,10 @@ document.getElementById("search").addEventListener("click", news_get);
                         let block=document.createElement('p')
                         let head = document.getElementById('new-pages');
                         p.innerHTML="NO data is present on this search ";
-                        
+
                     }else{
                     for(let j = 0; j < data.totalResults; j++) {
-                        
+
                         if(data.articles[j].urlToImage === null || data.articles[j].urlToImage == "undefined"){
                             console.log(data.articles[j].urlToImage);
                            continue;
@@ -55,8 +55,8 @@ document.getElementById("search").addEventListener("click", news_get);
                         block.innerHTML=markup;
                         const head =document.getElementById('first');
                         head.appendChild(block);
-                        } 
-                    } 
+                        }
+                    }
                     }
                 }).catch((e)=>{
                     console.log(e);
@@ -65,10 +65,10 @@ document.getElementById("search").addEventListener("click", news_get);
        }
     }
 
-     
-	   
+
+
     var buttons=document.getElementsByClassName("button");
-    
+
     var buttonsCount = buttons.length;
     for (let i = 0; i < buttonsCount; i += 1) {
         buttons[i].addEventListener("click", function() {
@@ -78,13 +78,13 @@ document.getElementById("search").addEventListener("click", news_get);
             }else{
                 gettext(this.id);
             }
-           
+
            var first = document.getElementById('first');
              first.innerHTML="";
         });
-    
+
     }
-         function gettext(news) {     
+         function gettext(news) {
             fetch(`https://newsapi.org/v2/top-headlines?sources=${news}&apiKey=3449fa02267b40518f1422b315334332`)
         .then((res)=>{
             return res.json()
@@ -100,7 +100,7 @@ document.getElementById("search").addEventListener("click", news_get);
                     <img src="${data.articles[j].urlToImage}" width="200px" height="150px" >
                     </div>
                     <div class="col-md-9">
-                    
+
                     <a href="${data.articles[j].url}"><h3>${data.articles[j].title}</h3> </a>
                        <p>${data.articles[j].description}</p>
                   </div>
@@ -110,19 +110,12 @@ document.getElementById("search").addEventListener("click", news_get);
                 block.innerHTML=markup;
                 const head =document.getElementById('first');
                 head.appendChild(block);
-            
+
         }
-            
+
         }).catch((e)=>{
             console.log(e);
         })
-<<<<<<< HEAD
-    })(this.id);
-    };
-}
-
-
-=======
        }
 
 
@@ -142,7 +135,7 @@ document.getElementById("search").addEventListener("click", news_get);
                        <img src="${data.articles[j].urlToImage}" width="200px" height="150px" >
                        </div>
                        <div class="col-md-9">
-                       
+
                        <a href="${data.articles[j].url}"><h3>${data.articles[j].title}</h3> </a>
                           <p>${data.articles[j].description}</p>
                      </div>
@@ -152,11 +145,10 @@ document.getElementById("search").addEventListener("click", news_get);
                    block.innerHTML=markup;
                    const head =document.getElementById('first');
                    head.appendChild(block);
-               
-           }   
+
+           }
            }).catch((e)=>{
             console.log(e);
         })
           }
->>>>>>> 706d89554b3b0c6e5625954925171ce3880a94c8
 

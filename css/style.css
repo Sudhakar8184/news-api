@@ -1,12 +1,12 @@
 header {
-	background-color: lightyellow;
+	background-color: rgba(56, 221, 41, 0.075);
 }
 
  #logo img{
-	padding: 10px;
+	/* padding: 10px;
 	margin-top:10px; 
-	margin-left:30px;
-	background-color: white;
+	margin-left:30px; 
+	 background-color: white; */
 	}
 
 .news-channels{
@@ -34,18 +34,24 @@ header {
 }
 #head-news{
 	padding: 5px;
-	border: 2px solid black;
+	color: whitesmoke;
+	border: 3px solid whitesmoke;
 	
 }
 #head-img{
- float:left;
- width: 15%;
+ border-radius: 8px 8px 8px 8px
 }
-#head-title-des{
-	width:75%;
-	float: right;
+#head-des{
+	color: rgb(102, 97, 97);
+}
+#head-chl{
+	color: rgb(102, 97, 97);
 }
 #clear{
 	clear:both;
+}
+.nav_btn{
+	color: black;
+	font-size: 18px
 }
 

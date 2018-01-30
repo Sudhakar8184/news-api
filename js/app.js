@@ -35,6 +35,7 @@ function newsGet() {
             head.appendChild(block);
           } else {
             for (let j = 0; j < data.totalResults; j += 1) {
+                console.log("jffhhffh",data.articles[j].urlToImage);
               if (data.articles[j].urlToImage === null || data.articles[j].urlToImage === undefined) {
                 console.log(data.articles[j].urlToImage);
               } else {

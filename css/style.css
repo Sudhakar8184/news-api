@@ -24,13 +24,8 @@ header {
 	border-radius: 10px 10px 10px 10px;
 	overflow:scroll;
 } 
-#checkbox-channel{
-	float: left;
-	width: 23%;
-	padding-left:20px;
-	overflow:scroll;
-	height:80px;
-	background-color:white
+.check{
+	padding-left:20px 
 }
 #head-news{
 	padding: 5px;

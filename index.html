@@ -1,161 +1,163 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
 
 </head>
 <body style="background-color:beige">
 <header>
-  <div class="row">
-  	<div class="col-md-2">
-		<div id="logo" >
-      		<img src="img/news.png" width="220px" height="90px" alt="">
-    	</div>
+    <div class="row">
+        <div class="col-md-2">
+            <div id="logo">
+                <img src="img/news.png" width="220px" height="90px" alt="">
+            </div>
+        </div>
+        <div class="col-md-10">
+            <center><h1>News Feedly</h1></center>
+            <marquee direction="right" scrollamount="6">
+                <h2>Updates will gives day to day <h2>
+            </marquee>
+        </div>
     </div>
-   <div class="col-md-10">
-    	<center><h1>News Feedly</h1></center>
-	   <marquee  direction="right" scrollamount="6">
-	   		<h2>Updates will gives day to day <h2>
-	   </marquee>
-</div>
-</div>
-<div>
-	 <nav  class="navbar navbar-inverse">
-		    <div class="navbar-fluid">
-			   <div class="navbar-header">
-               <a href="#" class="navbar-brand">News Feedly</a>
-               </div>
-			 <ul class="nav navbar-nav">
-		        <li><a class="btn button" id="sports">Sports</a></li>
-		        <li><a class="btn button" id="technology">Technology</a></li>
-		        <li><a class="btn button" id="entertainment">entertainment</a></li>
-			 </ul>
-			</div>
-	   </nav>
-	</div>
+    <div>
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">News Feedly</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a class="btn button" id="sports">Sports</a></li>
+                    <li><a class="btn button" id="technology">Technology</a></li>
+                    <li><a class="btn button" id="entertainment">entertainment</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>
 <section>
-  <form name="myForm" >
-      <div class="form-group" id="checkbox-channel">
-		    <label>Selet Channel</label><br>
-			<input type="checkbox"  id="id0" value="abc-news"> ABC news<br>
-			<input type="checkbox"  id="id1" value="bbc-news"> BBC news<br>
-			<input type="checkbox"  id="id2" value="bbc-sports"> BBC sport<br>
-			<input type="checkbox"  id="id3" value="espn"> ESPN<br>
-			<input type="checkbox"  id="id4" value="business-insider"> BUSINESS INSEDER<br>
-			<input type="checkbox"  id="id5" value="buzzfeed"> BUZZFEED<br>
-			<input type="checkbox"  id="id6" value="cnbc"> CNBC<br>
-			<input type="checkbox"  id="id7" value="cnn"> CNN<br>
-             <!-- <select id="stateSel" size="1" name="news-channel" class="form-control">
-             <option >-- Select State --</option>
-             <option name="news-channel" value="abc-news">ABC News</option>
-             <option  name="news-channel" value="bbc-news">BBC News</option>
-             <option  name="news-channel" value="bbc-sports">BBC-Sports</option>
-             <option  name="news-channel" value="espn">ESPN</option>
-             <option  name="news-channel" value="business-insider">Business Insider</option>
-             <option  name="news-channel" value="buzzfeed">Buzzfeed</option>
-             <option  name="news-channel" value="cnbc">CNBC</option>
-             <option name="news-channel" value="cnn">CNN</option>
-             </select> -->
-            </div>
-      <div class="form-group" style="float: left;width: 60%">
-        <input type="text"  style="height:50px" name="search-data" class="form-control"  placeholder="search.........." required>
-	  </div>
-	</form>
-	  <div  style="float: left;width: 15%;">
-			<button  id="search" style="height:50px"  class="form-control btn btn-success ">Search</button>
-	  </div>
-	<div class="clearfix"></div>
-
-<div class="row">
-	<div id="news-channels" class="col-md-3">
-		<center><h3>Top Channels</h3></center>
-    <div class="news-channels">
-        <button id="abc-news" class="btn btn-info button " style="margin-left: 10px">
-      	 <div class="row" style="margin-top: 8px">
-      		<div class="col-md-4">
-      	     <img src="img/abc-news.jpg" width="200px" height="100x" alt="">
-            </div>
-      	 </div>
-		</button>
-        <button id="bbc-news" class="btn btn-info button" style="margin-left: 10px">
-		 <div class="row" style="margin-top: 8px">
-			<div class="col-md-4">
-				<img src="img/bbc.png" width="200px" height="100x" alt="">
-			</div>
-		  </div>
-		</button>
-		<button id="bbc-sport" class="btn btn-info button" style="margin-left: 10px">
-		  <div class="row" style="margin-top:8px">
-			<div class="col-md-4">
-			    <img src="img/bbcsport.gif" width="200px" height="100x" alt="">
-			</div>
-		 </div>
-		</button>
-		<button id="espn" class="btn btn-info button" style="margin-left: 10px">
-		  <div class="row" style="margin-top: 8px">
-			  <div class="col-md-4">
-				<img src="img/espn.jpg" width="200px" height="100x" alt="">
-			  </div>
-		  </div>
-		</button>
-        <button id="business-insider" class="btn btn-info button" style="margin-left: 10px">
-      	 <div class="row">
-      		<div class="col-md-4">
-      	      <img src="img/business.jpg" width="200px" height="100x" alt="">
-			</div>
-		 </div>
-		</button>
-        <button id="buzzfeed" class="btn btn-info button" style="margin-left: 10px">
-      	   <div class="row">
-      		 <div class="col-md-4">
-      	        <img src="img/buzzfeed.png" width="200px" height="100x" alt="">
-			 </div>
-		   </div>
-		</button>
-        <button id="cnbc" class="btn btn-info button" style="margin-left: 10px">
-      	 <div class="row">
-      		<div class="col-md-4">
-      	         <img src="img/cnbc.png" width="200px" height="100x" alt="">
-            </div>
-      	  </div>
-        </button>
-
-        <button id="cnn" class="btn btn-info button" style="margin-left: 10px">
-      	 	<div class="row">
-      			<div class="col-md-4">
-      	    		<img src="img/cnn.png" width="200px" height="100x" alt="">
-            	</div>
-    	    </div>
-        </button>
+    <form name="myForm">
+        <div class="form-group" id="checkbox-channel">
+            <label>Selet Channel</label><br>
+            <input type="checkbox" id="id0" value="abc-news"> ABC news<br>
+            <input type="checkbox" id="id1" value="bbc-news"> BBC news<br>
+            <input type="checkbox" id="id2" value="bbc-sports"> BBC sport<br>
+            <input type="checkbox" id="id3" value="espn"> ESPN<br>
+            <input type="checkbox" id="id4" value="business-insider"> BUSINESS INSEDER<br>
+            <input type="checkbox" id="id5" value="buzzfeed"> BUZZFEED<br>
+            <input type="checkbox" id="id6" value="cnbc"> CNBC<br>
+            <input type="checkbox" id="id7" value="cnn"> CNN<br>
+            <!-- <select id="stateSel" size="1" name="news-channel" class="form-control">
+            <option >-- Select State --</option>
+            <option name="news-channel" value="abc-news">ABC News</option>
+            <option  name="news-channel" value="bbc-news">BBC News</option>
+            <option  name="news-channel" value="bbc-sports">BBC-Sports</option>
+            <option  name="news-channel" value="espn">ESPN</option>
+            <option  name="news-channel" value="business-insider">Business Insider</option>
+            <option  name="news-channel" value="buzzfeed">Buzzfeed</option>
+            <option  name="news-channel" value="cnbc">CNBC</option>
+            <option name="news-channel" value="cnn">CNN</option>
+            </select> -->
+        </div>
+        <div class="form-group" style="float: left; width: 60%">
+            <input type="text" style="height: 50px" name="search-data" class="form-control"
+                   placeholder="Search.........." required>
+        </div>
+    </form>
+    <div style="float: left;width: 15%;">
+        <button id="search" style="height:50px" class="form-control btn btn-success ">Search</button>
     </div>
-	</div>
+    <div class="clearfix"></div>
 
-	<div class="col-md-8.offset-md-1">
-			<center><h3>Top Headlines</h3></center>
-	 <div class="new-pages">
+    <div class="row">
+        <div id="news-channels" class="col-md-3">
+            <center><h3>Top Channels</h3></center>
+            <div class="news-channels">
+                <button id="abc-news" class="btn btn-info button " style="margin-left: 10px">
+                    <div class="row" style="margin-top: 8px">
+                        <div class="col-md-4">
+                            <img src="img/abc-news.jpg" width="200px" height="100x" alt="">
+                        </div>
+                    </div>
+                </button>
+                <button id="bbc-news" class="btn btn-info button" style="margin-left: 10px">
+                    <div class="row" style="margin-top: 8px">
+                        <div class="col-md-4">
+                            <img src="img/bbc.png" width="200px" height="100x" alt="">
+                        </div>
+                    </div>
+                </button>
+                <button id="bbc-sport" class="btn btn-info button" style="margin-left: 10px">
+                    <div class="row" style="margin-top:8px">
+                        <div class="col-md-4">
+                            <img src="img/bbcsport.gif" width="200px" height="100x" alt="">
+                        </div>
+                    </div>
+                </button>
+                <button id="espn" class="btn btn-info button" style="margin-left: 10px">
+                    <div class="row" style="margin-top: 8px">
+                        <div class="col-md-4">
+                            <img src="img/espn.jpg" width="200px" height="100x" alt="">
+                        </div>
+                    </div>
+                </button>
+                <button id="business-insider" class="btn btn-info button" style="margin-left: 10px">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/business.jpg" width="200px" height="100x" alt="">
+                        </div>
+                    </div>
+                </button>
+                <button id="buzzfeed" class="btn btn-info button" style="margin-left: 10px">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/buzzfeed.png" width="200px" height="100x" alt="">
+                        </div>
+                    </div>
+                </button>
+                <button id="cnbc" class="btn btn-info button" style="margin-left: 10px">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/cnbc.png" width="200px" height="100x" alt="">
+                        </div>
+                    </div>
+                </button>
 
-		<div id="first">
-		   <div  style="background-image: url('img/bg4.jpg');height:480px;width:1024" >
-			   <div style="float:right;padding-top: 50px">
-					<embed id="myVideo" width="420" height="345" src="https://www.youtube.com/embed/yNlcaSjFQTY" >
-					</embed>
-			    </div>
+                <button id="cnn" class="btn btn-info button" style="margin-left: 10px">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/cnn.png" width="200px" height="100x" alt="">
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
 
-		    </div>
-		</div>
+        <div class="col-md-8.offset-md-1">
+            <center><h3>Top Headlines</h3></center>
+            <div class="new-pages">
 
-     </div>
-	</div>
-</div>
+                <div id="first">
+                    <div style="background-image: url('img/bg4.jpg');height:480px;width:1024">
+                        <div style="float:right;padding-top: 50px">
+                            <embed id="myVideo" width="420" height="345"
+                                   src="https://www.youtube.com/embed/yNlcaSjFQTY">
+                            </embed>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </section>
 <footer style="background-color: rgb(7, 5, 34);height:40px;margin-top:5px">
-  <center><p style="padding-top:5px " >copyright © 2018</p></center>
+    <center><p style="padding-top:5px ">copyright © 2018</p></center>
 </footer>
 <!-- <script>
 	var myVideo =  iframe.getElementById('myVideo');

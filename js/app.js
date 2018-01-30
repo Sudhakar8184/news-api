@@ -1,7 +1,6 @@
 document.getElementById('search').addEventListener('click', newsGet);
 function newsGet() {
-  const first = document.getElementById('first');
-  first.innerHTML = '';
+  
   const searchData = document.forms.myForm['search-data'].value;
   // var news_channel = document.forms["myForm"]["news-channel"].value;
   const arr = [];
@@ -19,6 +18,8 @@ function newsGet() {
   if (searchData === '' || arr == '') {
     alert('please  select the channel and enter the data before search');
   } else {
+    const first = document.getElementById('first');
+  first.innerHTML = '';
     arr.forEach((arrayChannel) => {
       fetch(`https://newsapi.org/v2/everything?q=${searchData}&sources=${arrayChannel}&apiKey=3449fa02267b40518f1422b315334332`)
         .then(res => res.json())

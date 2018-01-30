@@ -73,8 +73,10 @@ for (let i = 0; i < buttonsCount; i += 1) {
   buttons[i].addEventListener('click', function() {
     const id = this.id;
     if (id === 'sports' || id === 'technology' || id === 'entertainment') {
+        clearfun()
       getnav(this.id);
     } else {
+        clearfun()
       gettext(this.id);
     }
     const first = document.getElementById('first');
@@ -142,5 +144,16 @@ function getnav(news) {
     }).catch((e) => {
       console.log(e);
     });
+}
+
+function clearfun(){
+  if(document.forms.myForm['search-data'].value != ""){
+    document.forms.myForm['search-data'].value="";
+  }
+  for (let z = 0; z < 8; z += 1) {
+    if (document.getElementById(`id${z}`).checked) {
+      document.getElementById(`id${z}`).checked=false;
+    }
+  }
 }
 

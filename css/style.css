@@ -11,7 +11,7 @@ header {
 
 .news-channels{
 	background-color: white;
-	height:500px;
+	height:450px;
 	border:2px solid lightyellow;
 	border-radius: 10px 10px 10px 10px;
 	overflow:scroll;
@@ -19,7 +19,7 @@ header {
 	} 
 .new-pages{
 	background-color: white;
-	height:500px;
+	height:450px;
 	border:2px solid lightyellow;
 	border-radius: 10px 10px 10px 10px;
 	overflow:scroll;
